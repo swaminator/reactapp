@@ -3,13 +3,13 @@ phases:
     install:
         commands:
             - 'npm install'
-            - aws s3 sync --acl public-read --delete build/ "s3://anatonieaemiliademo"
     pre_build:
         commands: []
     build:
         commands:
             - 'npm run build'
     post_build:
-        commands: []
+        commands:
+            - aws s3 sync --acl public-read --delete build/ "s3://anatonieaemiliademo"
     serve:
         commands: []
