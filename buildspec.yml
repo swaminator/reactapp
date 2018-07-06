@@ -10,6 +10,6 @@ phases:
             - 'npm run build'
     post_build:
         commands:
-            - aws s3 sync --acl public-read --delete build/ "s3://anatonieaemiliademo"
+            - aws s3 sync --acl public-read --delete build/ "s3://aemilialambdaedgedemo"
     serve:
         commands: []
