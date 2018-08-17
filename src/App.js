@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
           <h1 className="App-title">This is a new change</h1>
         </header>
-        <marquee>Testing StartAt feature #4</marquee>
+        <marquee>Try after refactor</marquee>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
