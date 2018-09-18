@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "starting long build"
 echo "this will take about 5 minutes"
+ls -la ~/.ssh/
 COUNTER=0
 while [  $COUNTER -lt 60 ]; do
     echo The counter is $COUNTER
