@@ -5,6 +5,7 @@ build:
     phases:
         pre_build:
             commands:
+                - 'cd app1'
                 - 'npm install'
         build:
             commands:
