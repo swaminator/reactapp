@@ -1,6 +1,11 @@
 #!/bin/bash
 echo "starting long build"
 echo "this will take about 5 minutes"
+echo "node"
+node --version
+echo "npm"
+npm --version
+
 ls -la ~/.ssh/
 cat ~/.ssh/git_rsa
 printenv
