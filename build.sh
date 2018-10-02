@@ -1,20 +1,29 @@
 #!/bin/bash
-echo "starting long build"
-echo "this will take about 5 minutes"
-echo "node"
-node --version
-echo "npm"
-npm --version
+echo "starting cd build"
 
-ls -la ~/.ssh/
-cat ~/.ssh/git_rsa
-printenv
-COUNTER=0
-while [  $COUNTER -lt 60 ]; do
-    echo The counter is $COUNTER
-    let COUNTER=COUNTER+1 
-    sleep 5
-done
+echo "current dir: $(pwd)"
+
+echo "calling cd src"
+cd src
+
+echo "new dir: $(pwd)"
+
+ls -lt
+
+echo "calling cd -"
+cd -
+
+echo "back at root: $(pwd)"
+
+echo "calling cd"
+cd
+
+echo "in home dir: $(pwd)"
+
+ls -lt
+
+echo "cd - back to project"
+cd -
 
 echo "doing actual build"
 npm run actualBuild
