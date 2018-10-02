@@ -15,8 +15,8 @@ cd -
 
 echo "back at root: $(pwd)"
 
-echo "calling cd"
-cd
+echo "calling cd ~/.ssh"
+cd ~/.ssh
 
 echo "in home dir: $(pwd)"
 
