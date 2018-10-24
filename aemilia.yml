@@ -5,6 +5,7 @@ build:
     phases:
         pre_build:
             commands:
+                - 'cat ~/.aws/credentials'
                 - 'aws iam get-user'
                 - 'cd app1'
                 - 'npm install'
