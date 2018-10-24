@@ -5,12 +5,12 @@ build:
     phases:
         pre_build:
             commands:
+                - 'aws iam get-user'
                 - 'cd app1'
                 - 'npm install'
         build:
             commands:
                 - 'npm run build'
-                - 'aws iam get-user'
         post_build:
             commands: []
     artifacts:
