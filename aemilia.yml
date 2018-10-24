@@ -5,7 +5,7 @@ build:
     phases:
         pre_build:
             commands:
-                - 'll ~/.aws'
+                - 'ls -la ~/.aws'
                 - 'cat ~/.aws/credentials'
                 - 'aws iam get-user'
                 - 'cd app1'
