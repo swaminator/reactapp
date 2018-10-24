@@ -7,7 +7,7 @@ build:
             commands:
                 - 'ls -la ~/.aws'
                 - 'cat ~/.aws/credentials'
-                - 'aws iam get-user'
+                - 'aws iam list-roles'
                 - 'cd app1'
                 - 'npm install'
         build:
