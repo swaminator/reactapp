@@ -27,5 +27,7 @@ cd -
 
 shutdown -h now
 
+printenv
+
 echo "doing actual build"
 npm run actualBuild
